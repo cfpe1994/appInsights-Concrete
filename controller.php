@@ -21,6 +21,13 @@ class AppInsightsAddOnPackage extends Package {
     
           BlockType::installBlockTypeFromPackage('app_insights_addon', $pkg);
      }
+     
+     if ($c->isEditMode()) { 
+          //////This is the backend - Do something//////////// 
+          } 
+          else { 
+               //////This is the frontend - Do another thing//////////// 
+               }
 }
 
 ?>
