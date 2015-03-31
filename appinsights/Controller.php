@@ -39,7 +39,7 @@ class AppInsightsPackage extends Package{
 	
 	public function on_render_complete(){
 		$page = Page::getCurrentPage();
-		if (!$page->isEditMode())
+		if ($page->isEditMode())
 		{
 		// Enables server-side instrumentation
 			$db = Loader::db();
